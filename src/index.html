@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-[url(images/netflix-bg.png)] bg-cover bg-center h-64 w-full">
-  <!-- <h1 class="text-3xl font-bold underline">
-    hello world!
-  </h1> -->
-  <header class="flex justify-between"><img src="images/netflix.png" height="45px" width="200px">
-    <span><button class="inline text-white p-1 pl-2.5 pr-10 mr-3 bg-gray-800 border border-gray-400 rounded-md">ই English</button>
-      <button class="text-white p-1 pl-4 pr-4 mr-40 mt-6 inline bg-red-600 rounded-md">Sign In</button></span></header>
-  <!-- <div class="columns-3 gap-4">
-    <div class="bg-amber-300 rounded-xl"> something</div>
-    <div class="bg-amber-300 rounded-xl"> something</div>
-    <div class="bg-amber-300 rounded-xl"> something</div>
-  </div> -->
+<body class="z-0 relative bg-[url(images/netflix-bg.png)] bg-cover bg-center h-screen w-screen">
+   <div class="z-1 absolute inset-0 h-screen w-screen bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.5),_rgba(0,0,0,1.0))]"></div>
+  <header class="relative z-10 flex justify-between"><img src="images/netflix.png" height="45px" width="200px">
+    <span><button class=" inline text-white p-1 pl-2.5 pr-10 mr-3 bg-gray-800 border border-gray-400 rounded-md">ই English</button>
+      <button class=" text-white p-1 pl-4 pr-4 mr-40 mt-6 inline bg-red-600 rounded-md">Sign In</button></span></header>
+      <section id="content" class="relative z-10 text-white font-sans text-center mt-37">
+        <div class=""><h1 class="text-6xl font-bold">Unlimited movies, TV<br> shows, and more</h1></div>
+        <div><h5 class="text-xl mt-8 font-bold">Starts at $7.99. Cancel anytime</h5></div>
+        <div><h6 class="text-md mt-8 font-normal">Ready to watch? enter your email to create or restart your membership.</h6></div>
+        <div class="flex">
+          <form class="h-[6.25vh] w-[25%] border border-gray-400 rounded-md bg-neutral-900 opacity-90 text-gray-100 ml-115 mt-5">
+            <input type="email" placeholder="Email address" class="w-full h-full p-2 border-none bg-transparent text-gray-300">
+          </form>
+          <button class="bg-red-600 text-white text-2xl h-[6.25vh] w-[15%] rounded-md ml-5 mt-5">Get Started ➡️</button>
+        </div>
+      </section>
 </body>
 </html>
